@@ -72,10 +72,7 @@
                 </div>
                 <div class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-right">
                     <div  class="nav-item">
-                        <!-- <?php
-                if ($row_user_ava)
-                foreach ($row_user_ava as $user_ava){
-            ?> -->
+
                         <a style="background-color: #fff" id="user" class="text-decoration-none link-dark"
                             href="index.php?controller=profile&action=index">
                             <div  id="user-ava">

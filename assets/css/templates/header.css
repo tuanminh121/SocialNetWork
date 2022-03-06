@@ -35,14 +35,13 @@
     width: 40px !important;
     height: 40px !important;
     border: 0px !important;
-    background-image: linear-gradient(0, #273cfa, #13cae2);
-    margin-left: 8px!important;
-    border-radius: 50%;
+
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
 }
+
 .fb-icon{
     font-size: 32px;
     margin-bottom: 0px;
@@ -105,7 +104,7 @@
     background-color: #ffffff;
 }
 .home-icon{
-    color: #1877F2;
+
 }
 .iconn{
     color: rgb(97, 97, 97);
