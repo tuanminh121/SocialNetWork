@@ -16,11 +16,14 @@
 
 #body-row {
   padding-bottom: 190px;
-  padding-top: 130px;
+  padding-top: 100px;
 }
 
-#img-wrapper {
+#text-wrapper {
   margin-top: 50px;
+  width: 500px;
+  height: 80px;
+  background-color: #F26398;
 }
 
 #logo-img {
@@ -34,16 +37,19 @@
 }
 
 #body-top-right {
-  width: 390px;
-  border-radius: 10px;
+  width: 500px;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.3);
   padding: 15px;
   background: #ffffff;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  
 }
-
 .login-form-input {
-  height: 52px;
-  padding: 14px;
+  height: 60px;
+  width: 400px;
+  padding-top: 14px;
   font-size: 17px;
 }
 
@@ -53,12 +59,13 @@
 
 #login-btn {
   margin-top: 15px;
-  width: 100%;
+  height: 60px;
+  width: 400px;
   font-family: "SF Pro Display Bold";
+  background-color: #F26398;
 }
 
 #forgotten-pwd-link-wrapper {
-  border-bottom: 1px solid #dadde1;
   padding-bottom: 20px;
   padding-top: 17px;
 }
@@ -71,61 +78,25 @@
   width: 100%;
   margin-top: 25px;
 }
+.form_login{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
 
-#create-acc-btn {
-  width: 200px;
-  background: #36a420;
-  font-size: 17px;
-  font-family: "SF Pro Display Bold";
 }
-
-#footer-wrapper {
-  padding-right: 60px;
-  padding-left: 60px;
+.checkbox{
+  width: 400px;
 }
-
-#footer-top {
-  padding-top: 30px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #dddfe2;
+.form-check-label{
+  margin-right: 200px;
 }
-
-#footer-top-list {
-  font-size: 12px;
-  font-family: "SF Pro Display Medium";
-  margin-bottom: 0;
+.needhelp_form{
+  text-decoration: none;
 }
-
-#footer-top-btn {
-  width: 30px;
-  height: 20px;
-  font-size: 16px;
-  color: rgb(0, 0, 0);
-  background: #f5f6f7;
-  border: 1px solid #ccd0d5;
-  border-bottom-color: #ccd0d5;
-  margin-left: 10px;
-  text-align: center;
-  font-family: "SF Pro Display Regular";
+.needhelp_form:hover{
+ text-decoration: underline;
 }
-
-#footer-bottom-list {
-  font-size: 14px;
-  font-family: "SF Pro Display Medium";
-  margin-bottom: 0;
-  margin-top: 10px;
-}
-
-#footer-license-wrapper {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-#footer-license {
-  color: #737373;
-  font-size: 11px;
-}
-
 .signup-modal {
   margin-top: 100px;
 }
@@ -157,16 +128,9 @@
   flex: 1;
 }
 
-#success-btn {
-  font-family: "SF Pro Display Bold", Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  color: #fff;
-  background-color: rgb(0, 164, 0);
-}
 
-#success-btn:hover {
-  background: linear-gradient(#79bc64, #578843);
-}
+
+
 
 @media screen and (max-width: 995px) {
   #body-row {
