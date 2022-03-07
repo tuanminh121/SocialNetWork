@@ -8,10 +8,8 @@ class ProfileController {
         $friendInfo = $Profile->getFriendInfo($IDFriend);
         $isMySendFriend = $Profile->isMySendFriend($IDFriend);
         $isOtherSendFriend = $Profile->isOtherSendFriend($IDFriend);
-        $profileImg = $Profile->getFriendImage($IDFriend );
-        $profileFriend = $Profile->getFriendsFriend($IDFriend);
-        $profilePost = $Profile->getFriendPost($IDFriend);
-        $getProfileImage = $Profile->getAvatar($UserID);
+        // $profilePost = $Profile->getFriendPost($IDFriend);
+        // $getProfileImage = $Profile->getAvatar($UserID);
         include_once "views/profile/friend.php";
     }
 

@@ -8,20 +8,20 @@
     />
     <title>Facebook</title>
     <!--THƯ VIỆN BOOSTRAP-->
-    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
-      href="../../assets/css/login-page/SF-Pro-Display-Bold.css?v=<?php echo time(); ?>"
+      href="assets/css/login-page/SF-Pro-Display-Bold.css?v=<?php echo time(); ?>"
     >
     <link
       rel="stylesheet"
-      href="../../assets/css/login-page/SF-Pro-Display-Medium.css?v=<?php echo time(); ?>"
+      href="assets/css/login-page/SF-Pro-Display-Medium.css?v=<?php echo time(); ?>"
     >
     <link
       rel="stylesheet"
-      href="../../assets/css/login-page/SF-Pro-Display-Regular.css?v=<?php echo time(); ?>"
+      href="assets/css/login-page/SF-Pro-Display-Regular.css?v=<?php echo time(); ?>"
     >
-    <link rel="stylesheet" href="../../assets/css/login-page/login-page.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="assets/css/login-page/login-page.css?v=<?php echo time(); ?>">
   </head>
 
 

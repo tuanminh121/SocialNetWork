@@ -2,12 +2,7 @@
 session_start();
 $controller = isset($_GET['controller']) ? $_GET['controller'] : 'newsfeed';
 if(!isset($_SESSION['isLoginOk'])) {
-    if(isset($_GET['controller'])) {
-        if($_GET['controller'] != "admin") 
-            $controller='login';
-    } else {
-        $controller='login';
-    }
+	$controller='login';
 }
 //lấy ra action
 $action = isset($_GET['action']) ? $_GET['action'] :'index';
@@ -25,7 +20,7 @@ if (!method_exists($object, $action)) { //kiểm tra class, function
     $error = "Trang ban tim có vẻ khong tồn tại rồi bạn êiiii";
     header("location: views/templates/404page.php?error=$error");
 }
-if ($controller === "Admin" || $controller === "Login"){ //trỏ vào admin, login
+if ($controller === "Login"){ //trỏ vào login
     $object->$action();
 }
 else {
