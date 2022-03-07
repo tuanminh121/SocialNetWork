@@ -34,7 +34,7 @@
                 $sql2 = "insert into user_profile (UserEmail, UserPass, UserGender, UserFirstName, UserLastName, UserBirth, VerifyLink) values ('$UserMail', '$pass_hash', {$UserGender}, '$UserFirstName', '$UserLastName', '$UserBirth', '$token')";
                 $result2 = mysqli_query($conn, $sql2);
                 if($result2) {
-                    $link = "www.nhom1fb.tokyo/index.php?controller=login&action=verify&key=".$UserMail."&token=".$token."";
+                    $link = "localhost/SocialNetwork/index.php?controller=login&action=verify&key=".$UserMail."&token=".$token."";
                     $isSendMail = $this->sendMail($UserMail, $link);
                     return $isSendMail;
                 } else {
@@ -71,7 +71,7 @@
                 //Content
                 $mail->isHTML(true);                                  //Set email format to HTML
                 $mail->Subject = 'Chào mừng bạn đến với trang fb của chúng tôi!';
-                $mail->Body    = "Chào mừng {$email}!<br>Để xác minh tài khoản, hãy truy cập đường link sau đây: <br><p>$link</p>";
+                $mail->Body    = "Chào mừng {$email}!<br>Để xác minh tài khoản, hãy truy cập đường link sau đây: <br><a href='$link'>Xác nhận</a>";
                 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
                 $mail->send();
