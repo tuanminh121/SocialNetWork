@@ -5,4 +5,3 @@
             require_once "views/newsfeed/index.php";
         }
     }
-?>

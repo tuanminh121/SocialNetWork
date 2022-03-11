@@ -3,8 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <link rel="icon" href="assets/images/Facebook_logo/Facebook_logo.ico" type="image/x-icon" />
-    <title>Facebook</title>
+    <title>Login</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/login-page/SF-Pro-Display-Bold.css" />
     <link rel="stylesheet" href="assets/css/login-page/SF-Pro-Display-Medium.css" />
@@ -30,7 +29,7 @@
                     align-items-lg-start
                     ">
                         <div id="text-wrapper">
-                            <h1 style="color: #fff;text-align: center;">Log In</h1>
+                            <h1 style="color: #fff;text-align: center;font-size:32px">Log In</h1>
                         </div>
                         <div class="
                     col-xxl-5
@@ -62,8 +61,6 @@
                                         align-items-center
                                         align-items-lg-start
                                         checkbox">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">Remember me</label>
                                         <a class="needhelp_form" href=""   data-bs-toggle="modal" data-bs-target="#signup-modal">Sign up?</a>
                                     </div>
                                     <button name="btnSignIn" id="login-btn" class="btn btn-primary btn-lg"
