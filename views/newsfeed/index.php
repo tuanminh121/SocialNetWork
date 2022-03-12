@@ -159,7 +159,11 @@
                                     <input id="comment-input" name="txt-comment" type="text"
                                         placeholder=" Viết bình luận" class="form-control">
                                 </div>
-                                
+                                <button id="send-comment" name="btn-comment" type="submit" style="display: none">
+                                    <span class="material-icons-round send-icon">
+                                        reply
+                                    </span>
+                                </button>
                             </div>
                         </form>
                     </div>

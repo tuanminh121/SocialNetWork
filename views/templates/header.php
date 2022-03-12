@@ -129,7 +129,7 @@
                             }
                         ?>
                             <a class="notify-item link-dark"
-                                href="index.php?controller=template&action=postDetail&PostID=<?php echo $notify['PostID'];?>">
+                                href="#">
                                 <div class="user-ava">
                                     <img class="user-img" src="<?php echo ($notify['UserAva']); ?>" alt="">
                                 </div>
