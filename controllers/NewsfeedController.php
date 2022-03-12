@@ -1,3 +1,4 @@
+
 <?php
     require_once 'models/Newsfeed.php';
     class NewsfeedController {
@@ -6,3 +7,4 @@
         }
     }
 ?>
+
