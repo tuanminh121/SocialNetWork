@@ -33,7 +33,7 @@
     <!--FaceBook LOGO-->
 </head>
 
-<body>
+<body style="background-color: #FFF0F5;">
     <!--HEADER-->
     <header class="container-fluid">
         <nav class="navbar navbar-light bg-light fixed-top fb-navbar">
@@ -41,7 +41,7 @@
                 <div class="navbar-left">
                     <a class="navbar-brand" href="index.php">
                         <div class="fb_logo icon" style="justify-content:flex-end;margin-left:8px">
-                            <img style = "border-radius:50%"src="assets/images/logo.jpg" alt="">
+                            <img src="assets/images/logo.jpg" alt="">
                         </div>
                     </a>
                     <form class="d-flex" action="index.php?controller=template&action=search" method="post"
@@ -72,7 +72,7 @@
                 </div>
                 <div class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-right">
                     <div  class="nav-item">
-                    <?php
+                        <?php
                 if ($row_user_ava)
                 foreach ($row_user_ava as $user_ava){
             ?>
@@ -97,7 +97,54 @@
                                 notifications
                             </span>
                         </button>
-                
+                        <div class="notify">
+                            <?php
+                    if($row_friend_notify)
+                    foreach($row_friend_notify as $notify){
+                        ?>
+                            <a class="notify-item link-dark"
+                                href="index.php?controller=profile&action=getFriendInfo&UserIDFriend=<?php echo $notify['UserID'];?>">
+                                <div class="user-ava">
+                                    <img class="user-img" src="<?php echo ($notify['UserAva']); ?>" alt="">
+                                </div>
+                                <div class="notify-content">
+                                    <p>
+                                        <b><?php echo ($notify['UserName']); ?></b> Đã gửi cho bạn một lời mời kết bạn
+                                    </p>
+                                </div>
+                            </a>
+                            <?php          
+                        }
+                        if($row_notify)
+                        foreach($row_notify as $notify){
+                            $time = 'vừa xong';
+                            if($notify['HH']==0){
+                                $time = $notify['MM'].' phút trước';
+                            }
+                            else if($notify['HH']>=24){
+                                $time = floor($notify['HH']/24) .' ngày trước';
+                            }
+                            else if($notify['HH']<24){
+                                $time = floor($notify['HH']) .' giờ trước';
+                            }
+                        ?>
+                            <a class="notify-item link-dark"
+                                href="index.php?controller=template&action=postDetail&PostID=<?php echo $notify['PostID'];?>">
+                                <div class="user-ava">
+                                    <img class="user-img" src="<?php echo ($notify['UserAva']); ?>" alt="">
+                                </div>
+                                <div class="notify-content">
+                                    <p>
+                                        <b><?php echo ($notify['UserName']); ?></b> Đã đăng một bài viết mới:
+                                        <?php echo ($notify['PostCaption']);?>
+                                    </p>
+                                    <b style="color:#1877F2"><?php echo $time?></b>
+                                </div>
+                            </a>
+                            <?php
+                            }
+                        ?>
+                        </div>
                     </div>
                     <div class="nav-item">
                         <button style="background-color:#fff;" class="account button" title="Account">

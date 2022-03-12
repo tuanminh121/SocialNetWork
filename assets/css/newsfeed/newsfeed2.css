@@ -335,16 +335,7 @@ img{
     height: auto;
     padding-right: 7px;
 }
-/*RIGHT SIDE BAR*/
-#right-side-bar{
-    top: 70px;
-    width: 25%;
-    height: 90%;
 
-    position: fixed;
-    overflow: scroll;
-    overflow-x: hidden;
-}
 @media screen and (max-width:1099px) {
 
     #main-news-feed{
