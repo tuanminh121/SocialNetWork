@@ -50,7 +50,7 @@
   height: 60px;
   width: 400px;
   padding-top: 14px;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 #login-form-input-password {
@@ -107,13 +107,13 @@
 
 .modal-title-description {
   font-family: "SF Pro Display Regular";
-  font-size: 14px;
+  font-size: 15px;
   color: #606770;
   margin: 0;
 }
 
 .form-control-input {
-  font-size: 14px;
+  font-size: 15px;
   font-family: "SF Pro Display Regular";
 }
 
