@@ -3,7 +3,10 @@ main{
     overflow-x:hidden;
 }
 
-
+.action-comment-under{
+    display:flex;
+    justify-content:space-between;
+}
 /*MAIN NEWS FEED*/
 #main-news-feed{
     display: flex;
@@ -11,7 +14,16 @@ main{
     align-items: center;
     justify-content: center;
     padding: 0px 32px;
-
+    width: 40%;
+    margin-left: 45%;
+}
+.sidebar-item{
+    display:flex;
+    align-items:center;
+    margin-bottom: 20px;
+}
+.sidebar-item .text{
+    margin-left:20px;
 }
 .thinking-post{
     border-radius: 10px;
@@ -298,7 +310,10 @@ img{
     color: rgb(110, 108, 108);
 }
 .send-icon:hover{
-
+    color:   #c20a13;
+}
+.send-icon:active{
+    color:   #c20a13;
 }
 .comments{
     margin-top: 10px;
@@ -326,7 +341,7 @@ img{
     border: 0px;
     border-radius: 20px;
     display: flex;
-
+   
     flex-direction: column;
     background-color:#F2F3F5;
     max-width: 80%;
@@ -340,13 +355,12 @@ img{
     top: 70px;
     width: 25%;
     height: 90%;
-
+    margin-left: 60%;
     position: fixed;
     overflow: scroll;
     overflow-x: hidden;
 }
 @media screen and (max-width:1099px) {
-
     #main-news-feed{
         margin-left: 15%;
     }
