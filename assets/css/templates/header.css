@@ -35,13 +35,16 @@
     width: 40px !important;
     height: 40px !important;
     border: 0px !important;
-
+    margin-left: 8px!important;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
 }
-
+.fb_logo img{
+    border-radius: 50%;
+    background-color: #ffffff;
+}
 .fb-icon{
     font-size: 32px;
     margin-bottom: 0px;
@@ -104,7 +107,7 @@
     background-color: #ffffff;
 }
 .home-icon{
-
+    color:   #c20a13;
 }
 .iconn{
     color: rgb(97, 97, 97);
@@ -263,7 +266,7 @@
 
 /*CSS FOR NOTIFICATION*/
 .notify{
-    width: 500px;
+    width: 470px;
     height: auto;
     max-height: 600px;
     padding: 1px;
@@ -278,6 +281,11 @@
     box-shadow: 3px 3px 10px rgb(168, 166, 166);
     overflow-y: scroll;
 }
+.notify::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+} 
+
 .notify-item{
     display: flex;
     justify-content: flex-start;

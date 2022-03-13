@@ -1,6 +1,6 @@
 <?php
     require_once 'models/Template.php';
-   
+
     class TemplateController {
         public function header() { 
             $UserID = $_SESSION['isLoginOk'];

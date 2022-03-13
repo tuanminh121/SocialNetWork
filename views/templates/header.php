@@ -33,9 +33,7 @@
     <!--FaceBook LOGO-->
 </head>
 
-<body body style="background-color: #FFF0F5;">
-    <!--HEADER-->
-    <body style="background-color: #FFF0F5;">
+<body style="background-color: #FFF0F5;">
     <!--HEADER-->
     <header class="container-fluid">
         <nav class="navbar navbar-light bg-light fixed-top fb-navbar">
@@ -46,7 +44,7 @@
                             <img style="border-radius:50%" src="assets/images/logo.jpg" alt="">
                         </div>
                     </a>
-                    <form class="d-flex" action="index.php?controller=template&action=search" method="post"
+                    <form style="margin-top:12px" class="d-flex" action="index.php?controller=template&action=search" method="post"
                         autocomplete="off">
                         <input name="search-input" class="form-control me-2 search-input" type="search"
                             placeholder="Tìm kiếm..." aria-label="Search">
@@ -131,7 +129,7 @@
                             }
                         ?>
                             <a class="notify-item link-dark"
-                                href="index.php?controller=template&action=postDetail&PostID=<?php echo $notify['PostID'];?>">
+                                href="#">
                                 <div class="user-ava">
                                     <img class="user-img" src="<?php echo ($notify['UserAva']); ?>" alt="">
                                 </div>
