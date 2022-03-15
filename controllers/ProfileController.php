@@ -37,4 +37,4 @@ class ProfileController {
         }
         header("location: index.php?controller=profile&action=getFriendInfo&UserIDFriend= ". $IDFriend ." ");
     }
-}
+}   
