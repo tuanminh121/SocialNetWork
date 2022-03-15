@@ -44,7 +44,7 @@
                             <img style="border-radius:50%" src="assets/images/logo.jpg" alt="">
                         </div>
                     </a>
-                    <form style="margin-top:12px" class="d-flex" action="index.php?controller=template&action=search" method="post"
+                    <form  class="d-flex" action="index.php?controller=template&action=search" method="post"
                         autocomplete="off">
                         <input name="search-input" class="form-control me-2 search-input" type="search"
                             placeholder="Tìm kiếm..." aria-label="Search">

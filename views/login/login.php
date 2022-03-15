@@ -62,8 +62,7 @@
                                         align-items-center
                                         align-items-lg-start
                                         checkbox">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                       
                                         <a class="needhelp_form" href=""   data-bs-toggle="modal" data-bs-target="#signup-modal">Sign up?</a>
                                     </div>
                                     <button name="btnSignIn" id="login-btn" class="btn btn-primary btn-lg"

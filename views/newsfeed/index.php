@@ -272,3 +272,8 @@ function clickImg(link) {
     window.open(link, "_blank");
 }
 </script>
+<style>
+    .d-flex{
+        margin-top:12px;
+    }
+</style>

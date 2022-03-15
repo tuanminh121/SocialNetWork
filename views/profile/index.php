@@ -157,6 +157,7 @@
                       <form class="editPost" action="index.php?controller=Profile&action=editPost&PostID=<?php echo $row_news['PostID']?>"
                       style="width:100%;height:auto;display:none; flex-direction:column" method="post">
                         <textarea name="editContent" id="" cols="100" rows="10"><?php echo $row_news['PostCaption']?></textarea>
+                        
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary editPostCloseBtn">
                             Đóng
@@ -269,7 +270,7 @@
                       <div class="comment-input">
                         <input id="comment-input" name="txt-comment" type="text" placeholder=" Viết bình luận" class="form-control">
                       </div>
-                      <button id="send-comment" name="btn-comment" type="submit">
+                      <button id="send-comment" name="btn-comment" type="submit" style="display: none;">
                         <span class="material-icons-round send-icon">
                           reply
                         </span>
@@ -302,34 +303,6 @@
                             <?php echo $row_comment['CommentContent']; ?>
                           </p>
                         </div>
-                        <!--EDIT COMMENTT-->
-                        <div id="edit-comment" class="hide">
-                          <!-- sửa comment -->
-                          <div class="option-comment option-icon collapsible">
-                            <span id="btn-edit" class="material-icons-outlined option-comment option-icon" style="font-size:15px">
-                              edit
-                            </span>
-                          </div>
-                          <!-- form sửa comment -->
-                          <form class="content" id="form-edit-comment" action="index.php?controller=profile&action=editComment" method="post">
-                            <input class="ID" type="text" value="<?php echo $row_comment['UserID']; ?>" name="CommentUserID">
-                            <input class="ID" type="text" value="<?php echo $UserID; ?>" name="UserID">
-                            <!--Người đăng nhậpp-->
-                            <input class="ID" type="text" value="<?php echo $row_comment['CommentID']; ?>" name="CommentID">
-                            <textarea id="input-edit-comment" name="txt-edit" id="" cols="30" rows="4"><?php echo $row_comment['CommentContent']; ?></textarea>
-                            <button id="btn-edit-comment" name="btn-edit" type="submit">Lưu</button>
-                          </form>
-                          <!-- form sửa comment -->
-
-                          <!-- xóa comment -->
-                          <a href="index.php?controller=profile&action=deleteComment&CommentID=<?php echo $row_comment['CommentID']; ?>" class="link-dark">
-                            <span class="hide material-icons-outlined option-comment option-icon" style="font-size:15px">
-                              delete_forever
-                            </span>
-                          </a>
-                          <!-- xóa comment -->
-                        </div>
-                        <!-- đóng edit comment-->
                       </li>
                     <?php
                     } else {

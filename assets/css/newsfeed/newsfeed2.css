@@ -77,6 +77,13 @@ main{
     object-fit: cover;
     border-radius: 50%
 }
+.action-comment-under{
+    justify-content: space-between;
+    display: flex;
+    padding: 7px 0px;
+    margin: 0px 12px;
+    border-bottom: 1px solid gray;
+}
 .user-name-time{
     font-size: 14px;
     padding-left: 12px;
@@ -219,6 +226,7 @@ img{
     margin: 0px 12px;
     border-bottom: 1px solid gray;
 }
+
 .action-name{
     padding-left: 7px;
     padding-top: 4px;
